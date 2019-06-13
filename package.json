@@ -1,0 +1,24 @@
+{
+  "name": "interview-task",
+  "version": "1.0.0",
+  "description": "task for Lenus eHealth",
+  "main": "script.js",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass scss/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RytisDr/eHealth.git"
+  },
+  "author": "Rytis Drazdauskas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RytisDr/eHealth/issues"
+  },
+  "homepage": "https://github.com/RytisDr/eHealth#readme"
+}
