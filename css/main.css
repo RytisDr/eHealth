@@ -1,3 +1,22 @@
+#weights,
+#buffet {
+  width: 100vw;
+  margin-bottom: -4px; }
+
+#whiteBg {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  margin: -170px auto 0px;
+  left: 0;
+  right: 0;
+  border-radius: 26px; }
+
+body,
+html {
+  margin: 0 auto; }
+
 #burger {
   position: fixed;
   top: 20px;
@@ -31,5 +50,5 @@
     font-weight: 300;
     font-size: 10pt;
     grid-row: 2;
-    margin: 0px auto;
+    margin: 0px auto 30px;
     text-align: center; }
