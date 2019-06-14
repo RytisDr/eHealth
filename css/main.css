@@ -5,17 +5,41 @@
 
 #whiteBg {
   position: absolute;
-  width: 200px;
-  height: 300px;
+  width: 80vw;
+  height: auto;
   background-color: white;
-  margin: -170px auto 0px;
+  margin: -160px auto 0px;
   left: 0;
   right: 0;
-  border-radius: 26px; }
+  border-radius: 26px;
+  text-align: center;
+  padding: 20px 0px; }
+  #whiteBg button {
+    background-color: #009779;
+    color: white;
+    border: none;
+    border-radius: 26px;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif; }
+  #whiteBg p {
+    padding: 0 20px; }
 
 body,
 html {
   margin: 0 auto; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12pt; }
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11pt; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10pt; }
 
 #burger {
   position: fixed;
