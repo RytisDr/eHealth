@@ -3,6 +3,9 @@
   width: 100vw;
   margin-bottom: -4px; }
 
+#navBackground {
+  margin-top: 180px; }
+
 #whiteBg {
   position: absolute;
   width: 80vw;
@@ -24,6 +27,14 @@
   #whiteBg p {
     padding: 0 20px; }
 
+#loader-pie {
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  width: 250px;
+  height: 250px; }
+
 body,
 html {
   margin: 0 auto; }
@@ -41,38 +52,45 @@ p {
   font-family: "Open Sans", sans-serif;
   font-size: 10pt; }
 
-#burger {
+#index-header {
+  transition: all 0.3s;
+  background-color: white;
+  width: 100%;
+  height: 180px;
   position: fixed;
-  top: 20px;
-  right: 20px; }
-  #burger div {
-    background-color: black;
-    width: 35px;
-    height: 3px;
-    margin: 6px 0px; }
-  #burger #arrow div {
-    position: absolute;
-    left: -6px;
-    right: 0;
-    margin: auto;
-    width: 10px;
-    transform: rotate(45deg); }
-  #burger #arrow div:nth-child(2) {
-    transform: rotate(-45deg);
-    left: 6px; }
-
-#logo-slogan {
-  position: relative;
-  display: grid; }
-  #logo-slogan #logo,
-  #logo-slogan #slogan {
+  z-index: 2;
+  top: 0; }
+  #index-header #burger {
+    position: fixed;
+    z-index: 3;
+    top: 20px;
+    right: 20px; }
+    #index-header #burger div {
+      background-color: black;
+      width: 35px;
+      height: 3px;
+      margin: 6px 0px; }
+    #index-header #burger #arrow div {
+      position: absolute;
+      left: -6px;
+      right: 0;
+      margin: auto;
+      width: 10px;
+      transform: rotate(45deg); }
+    #index-header #burger #arrow div:nth-child(2) {
+      transform: rotate(-45deg);
+      left: 6px; }
+  #index-header #logo,
+  #index-header #slogan {
+    display: block;
+    transition: all 0.3s;
     grid-row: 1;
     width: 130px;
-    margin: 70px auto 0; }
-  #logo-slogan #slogan {
+    margin: 30px auto 0; }
+  #index-header #slogan {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 10pt;
     grid-row: 2;
-    margin: 0px auto 30px;
+    margin-top: 0;
     text-align: center; }
