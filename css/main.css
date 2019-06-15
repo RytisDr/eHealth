@@ -20,6 +20,7 @@
   #whiteBg button {
     background-color: #009779;
     color: white;
+    font-size: 4vw;
     border: none;
     border-radius: 26px;
     padding: 20px;
@@ -29,11 +30,21 @@
 
 #loader-pie {
   display: block;
-  position: relative;
   margin: auto;
   margin-top: 30px;
-  width: 250px;
+  width: 60vw;
   height: 250px; }
+
+#pieSection {
+  margin: 70px auto; }
+  #pieSection p {
+    text-align: center; }
+  #pieSection p {
+    padding: 0 25vw; }
+  #pieSection #outerRing,
+  #pieSection #middleRing {
+    opacity: 0;
+    transition: opacity 2.5s; }
 
 body,
 html {
@@ -42,7 +53,8 @@ html {
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 12pt; }
+  font-size: 12pt;
+  text-align: center; }
 
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -67,9 +79,10 @@ p {
     right: 20px; }
     #index-header #burger div {
       background-color: black;
-      width: 35px;
+      width: 30px;
       height: 3px;
-      margin: 6px 0px; }
+      margin: 5px 0px;
+      border-radius: 26px; }
     #index-header #burger #arrow div {
       position: absolute;
       left: -6px;
