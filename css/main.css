@@ -49,11 +49,12 @@
 #review1,
 #review2 {
   display: grid;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  width: 100vw;
   grid-template-columns: 1fr 1fr; }
   #review1 p,
   #review2 p {
-    padding: 10px;
+    padding: 0px 15px;
     background-color: white; }
 
 #review1 img {
@@ -67,6 +68,9 @@
   grid-column: 1;
   grid-row: 1;
   margin-bottom: 0; }
+
+#reviewsSection h1 {
+  margin-bottom: 30px; }
 
 body,
 html {
@@ -89,7 +93,7 @@ p {
 #index-header {
   transition: all 0.3s;
   background-color: white;
-  width: 100%;
+  width: 100vw;
   height: 180px;
   position: fixed;
   z-index: 2;
