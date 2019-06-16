@@ -3,6 +3,7 @@ const headerInitHeight = document.getElementById("index-header").clientHeight;
 const circlesSection = document.querySelector("#pieSection");
 const contactButtons = document.querySelectorAll(".contactBtn");
 const orderButtons = document.querySelectorAll(".orderBtn");
+const aboutButtons = document.querySelectorAll(".aboutBtn");
 //scroll actions
 window.addEventListener("scroll", () => {
   const logo = document.getElementById("logo");
@@ -21,13 +22,16 @@ window.addEventListener("scroll", () => {
     logo.style.width = "130px";
     slogan.style.opacity = "1";
   }
-  if (isInViewport(circlesSection)) {
-    middleRing.style.opacity = "1";
-    middleRing.addEventListener("transitionend", opacity1);
-  } else {
-    middleRing.style.opacity = "0";
-    outerRing.style.opacity = "0";
-    middleRing.removeEventListener("transitionend", opacity1);
+  //the ring animaiton script, under conditions taht its in vw
+  if (window.location.href.includes("index")) {
+    if (isInViewport(circlesSection)) {
+      middleRing.style.opacity = "1";
+      middleRing.addEventListener("transitionend", opacity1);
+    } else {
+      middleRing.style.opacity = "0";
+      outerRing.style.opacity = "0";
+      middleRing.removeEventListener("transitionend", opacity1);
+    }
   }
 });
 function opacity1() {
@@ -52,6 +56,9 @@ document.querySelector("#burger").addEventListener("click", () => {
   });
 });
 //navigation button actions
+aboutButtons.forEach(btn => {
+  listen(btn);
+});
 contactButtons.forEach(btn => {
   listen(btn);
 });
@@ -66,5 +73,11 @@ function listen(btn) {
     if (e.target.className === "orderBtn") {
       window.location.href = "/order.html";
     }
+    if (e.target.className === "aboutBtn") {
+      window.location.href = "/about.html";
+    }
   });
 }
+document.querySelector("#home").addEventListener("click", () => {
+  window.location.href = "index.html";
+});

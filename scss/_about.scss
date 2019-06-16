@@ -1,0 +1,18 @@
+#aboutSection {
+  margin-top: 200px;
+  p {
+    padding: 15px 50px;
+  }
+  .contactBtn {
+    display: block;
+    margin: auto;
+    padding: 15px 8px;
+  }
+  #profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    p {
+      padding: 25px;
+    }
+  }
+}

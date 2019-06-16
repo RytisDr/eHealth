@@ -17,15 +17,7 @@
   border-radius: 26px;
   text-align: center;
   padding: 20px 0px;
-  button {
-    background-color: #009779;
-    color: white;
-    font-size: 4vw;
-    border: none;
-    border-radius: 26px;
-    padding: 20px;
-    font-family: "Montserrat", sans-serif;
-  }
+
   p {
     padding: 0 20px;
   }
@@ -81,20 +73,11 @@
     margin-bottom: 30px;
   }
 }
-footer {
-  margin: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  p {
-    font-size: 8pt;
-    display: block;
-    margin-top: auto;
-  }
-}
 footer button,
 nav button {
   background-color: transparent;
   border: 1px black solid;
+  color: black;
   border-radius: 26px;
   font-family: "Montserrat", sans-serif;
   width: 120px;

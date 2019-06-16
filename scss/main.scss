@@ -21,7 +21,16 @@ p {
   font-family: $p-font;
   font-size: 10pt;
 }
-
+button {
+  background-color: #009779;
+  color: white;
+  font-size: 4vw;
+  border: none;
+  border-radius: 26px;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
 //index-header
 #index-header {
   transition: all 0.3s;
@@ -88,6 +97,7 @@ nav {
   transition: top 1s;
   button {
     margin: 50px auto 0px;
+    color: black;
   }
   button:not(:first-child) {
     margin: 20px auto 0px;
@@ -122,5 +132,15 @@ nav {
       margin: -13px 0 0 29px;
       transform: rotate(-45deg);
     }
+  }
+}
+footer {
+  margin: 50px 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  p {
+    font-size: 8pt;
+    display: block;
+    margin-top: auto;
   }
 }
