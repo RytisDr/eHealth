@@ -1,0 +1,115 @@
+#weights,
+#buffet {
+  width: 100vw;
+  margin-bottom: -4px;
+}
+#navBackground {
+  margin-top: 180px;
+}
+#whiteBg {
+  position: absolute;
+  width: 80vw;
+  height: auto;
+  background-color: white;
+  margin: -160px auto 0px;
+  left: 0;
+  right: 0;
+  border-radius: 26px;
+  text-align: center;
+  padding: 20px 0px;
+  button {
+    background-color: #009779;
+    color: white;
+    font-size: 4vw;
+    border: none;
+    border-radius: 26px;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+  p {
+    padding: 0 20px;
+  }
+}
+#loader-pie {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  width: 60vw;
+  height: 250px;
+}
+#pieSection {
+  margin: 70px auto;
+  p {
+    text-align: center;
+  }
+  p {
+    padding: 0 25vw;
+  }
+  #outerRing,
+  #middleRing {
+    opacity: 0;
+    transition: opacity 2.5s;
+  }
+}
+#review1,
+#review2 {
+  display: grid;
+  margin-bottom: 20px;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr;
+  p {
+    padding: 0px 15px;
+    background-color: white;
+  }
+}
+#review1 img {
+  display: block;
+  margin-left: auto;
+}
+#review2 {
+  img {
+    grid-column: 2;
+  }
+  p {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+#reviewsSection {
+  margin-bottom: 50px;
+  h1 {
+    margin-bottom: 30px;
+  }
+}
+footer {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  p {
+    font-size: 8pt;
+  }
+}
+footer button,
+nav button {
+  background-color: transparent;
+  border: 1px black solid;
+  border-radius: 26px;
+  font-family: "Montserrat", sans-serif;
+  width: 120px;
+  padding: 15px 0;
+  display: block;
+  margin-left: auto;
+}
+nav {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  border-radius: 0px 0px 26px 26px;
+  background-color: white;
+  width: 100vw;
+  height: 300px;
+  transition: height 1s;
+  button {
+    margin: 50px auto 0px;
+  }
+}

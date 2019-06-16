@@ -1,6 +1,7 @@
 "use strict";
 const headerInitHeight = document.getElementById("index-header").clientHeight;
 const circlesSection = document.querySelector("#pieSection");
+
 window.addEventListener("scroll", () => {
   const logo = document.getElementById("logo");
   const slogan = document.getElementById("slogan");
