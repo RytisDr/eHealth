@@ -46,6 +46,28 @@
     opacity: 0;
     transition: opacity 2.5s; }
 
+#review1,
+#review2 {
+  display: grid;
+  margin-bottom: 25px;
+  grid-template-columns: 1fr 1fr; }
+  #review1 p,
+  #review2 p {
+    padding: 10px;
+    background-color: white; }
+
+#review1 img {
+  display: block;
+  margin-left: auto; }
+
+#review2 img {
+  grid-column: 2; }
+
+#review2 p {
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 0; }
+
 body,
 html {
   margin: 0 auto; }
