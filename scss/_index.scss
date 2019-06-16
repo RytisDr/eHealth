@@ -87,6 +87,8 @@ footer {
   grid-template-columns: 1fr 1fr;
   p {
     font-size: 8pt;
+    display: block;
+    margin-top: auto;
   }
 }
 footer button,
@@ -99,17 +101,4 @@ nav button {
   padding: 15px 0;
   display: block;
   margin-left: auto;
-}
-nav {
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  border-radius: 0px 0px 26px 26px;
-  background-color: white;
-  width: 100vw;
-  height: 300px;
-  transition: height 1s;
-  button {
-    margin: 50px auto 0px;
-  }
 }

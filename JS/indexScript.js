@@ -1,7 +1,9 @@
 "use strict";
 const headerInitHeight = document.getElementById("index-header").clientHeight;
 const circlesSection = document.querySelector("#pieSection");
-
+const contactButtons = document.querySelectorAll(".contactBtn");
+const orderButtons = document.querySelectorAll(".orderBtn");
+//scroll actions
 window.addEventListener("scroll", () => {
   const logo = document.getElementById("logo");
   const slogan = document.getElementById("slogan");
@@ -41,4 +43,28 @@ function isInViewport(elem) {
     bounding.right <=
       (window.innerWidth || document.documentElement.clientWidth)
   );
+}
+//Burger menu actions
+document.querySelector("#burger").addEventListener("click", () => {
+  document.querySelector("nav").style.top = "0";
+  document.querySelector("#closeMenu").addEventListener("click", () => {
+    document.querySelector("nav").style.top = "-301px";
+  });
+});
+//navigation button actions
+contactButtons.forEach(btn => {
+  listen(btn);
+});
+orderButtons.forEach(btn => {
+  listen(btn);
+});
+function listen(btn) {
+  btn.addEventListener("click", e => {
+    if (e.target.className === "contactBtn") {
+      window.location.href = "/contact.html";
+    }
+    if (e.target.className === "orderBtn") {
+      window.location.href = "/order.html";
+    }
+  });
 }

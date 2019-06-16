@@ -1,5 +1,6 @@
 @import "index";
 @import "about";
+@import "contact";
 $p-font: "Open Sans", sans-serif;
 $h-font: "Montserrat", sans-serif;
 body,
@@ -36,11 +37,12 @@ p {
     z-index: 3;
     top: 20px;
     right: 20px;
+    padding: 10px 7px;
     div {
       background-color: black;
       width: 30px;
       height: 3px;
-      margin: 5px 0px;
+      margin: 5px 9px;
       border-radius: 26px;
     }
     #arrow div {
@@ -78,10 +80,11 @@ nav {
   z-index: 3;
   top: 0;
   border-radius: 0px 0px 26px 26px;
+  border-bottom: 1px solid black;
   background-color: white;
   width: 100vw;
   height: 300px;
-  top: -300px;
+  top: -301px;
   transition: top 1s;
   button {
     margin: 50px auto 0px;
