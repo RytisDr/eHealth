@@ -81,3 +81,9 @@ function listen(btn) {
 document.querySelector("#home").addEventListener("click", () => {
   window.location.href = "index.html";
 });
+///fetch
+fetch("data.json")
+  .then(res => res.json())
+  .then(result => {
+    console.log(result);
+  });
