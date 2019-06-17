@@ -87,19 +87,34 @@ fetch("data.json")
   .then(result => {
     result.forEach(item => {
       if (document.body.id === "indexBody") {
-        parseIndexData(item);
+        applyIndexData(item);
       }
       if (document.body.id === "aboutBody") {
-        parseAboutData(item);
+        applyAboutData(item);
       }
     });
   });
-function parseIndexData(item) {
-  console.log(item);
-  document.querySelector("#weights").src = item.indexMain.bgImage1;
-  document.querySelector("#buffet").src = item.indexMain.bgImage2;
+function applyIndexData(data) {
+  console.log(data);
+  //main bg images
+  document.querySelector("#weights").src = data.indexMain.bgImage1;
+  document.querySelector("#buffet").src = data.indexMain.bgImage2;
+  //first h1
+  document.querySelector("#whiteBg h1").textContent = data.indexMain.heading1;
+  //first p
+  document.querySelector("#whiteBg p").textContent = data.indexMain.mainP;
+  //under SVG
+  document.querySelector("#pieSection h1").textContent =
+    data.underCircles.heading1;
+  document.querySelector("#pieSection p").textContent =
+    data.underCircles.paragraph;
+  //reviews
+  document.querySelector("#review1Img").src = data.reviews.review1Img;
+  document.querySelector("#review1 p").textContent = data.reviews.review1P;
+  document.querySelector("#review2Img").src = data.reviews.review2Img;
+  document.querySelector("#review2 p").textContent = data.reviews.review2P;
 }
-function parseAboutData(item) {
-  document.querySelector("#profileP").textContent = item.aboutMe.pictureP;
-  document.querySelector("#aboutP").textContent = item.aboutMe.aboutP;
+function applyAboutData(data) {
+  document.querySelector("#profileP").textContent = data.aboutMe.pictureP;
+  document.querySelector("#aboutP").textContent = data.aboutMe.aboutP;
 }
