@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
     slogan.style.opacity = "1";
   }
   //the ring animaiton script, under conditions taht its in vw
-  if (window.location.href.includes("index")) {
+  if (circlesSection) {
     if (isInViewport(circlesSection)) {
       middleRing.style.opacity = "1";
       middleRing.addEventListener("transitionend", opacity1);
@@ -81,9 +81,25 @@ function listen(btn) {
 document.querySelector("#home").addEventListener("click", () => {
   window.location.href = "index.html";
 });
-///fetch
+///fetch the JSON, apply to the DOM
 fetch("data.json")
   .then(res => res.json())
   .then(result => {
-    console.log(result);
+    result.forEach(item => {
+      if (document.body.id === "indexBody") {
+        parseIndexData(item);
+      }
+      if (document.body.id === "aboutBody") {
+        parseAboutData(item);
+      }
+    });
   });
+function parseIndexData(item) {
+  console.log(item);
+  document.querySelector("#weights").src = item.indexMain.bgImage1;
+  document.querySelector("#buffet").src = item.indexMain.bgImage2;
+}
+function parseAboutData(item) {
+  document.querySelector("#profileP").textContent = item.aboutMe.pictureP;
+  document.querySelector("#aboutP").textContent = item.aboutMe.aboutP;
+}

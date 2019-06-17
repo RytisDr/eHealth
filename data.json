@@ -16,6 +16,10 @@
       "review1P": "'I had experience with multiple personal trainers and Jeremy helped me the most, he is a true professional when it comes to nutrition and training' - Rebecca, 32",
       "review2Img": "assets/img/daniel-apodaca_review2_200x150px.jpg",
       "review2P": "'Jeremy set me on a path to healthier lifestyle, he's more than a personal trainer.' - James, 28"
+    },
+    "aboutMe": {
+      "pictureP": "My name is Jeremy and I have been Improving lifestyles since 2000.",
+      "aboutP": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium, nisl condimentum fermentum cursus, sem tellus imperdiet felis, in bibendum justo leo nec lectus. In sit amet vehicula nisl. Nulla suscipit ligula finibus lorem dictum placerat. Sed consequat, nulla in gravida cursus, lectus lectus dapibus mi, sit amet lacinia libero sapien quis velit. Quisque porttitor dignissim varius. Nam vitae malesuada tellus, at malesuada tortor."
     }
   }
 ]
