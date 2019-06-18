@@ -1,7 +1,10 @@
 #weights,
 #buffet {
   width: 100vw;
-  margin-bottom: -4px; }
+  margin-bottom: -4px;
+  max-width: 1100px;
+  display: block;
+  margin: 0 auto; }
 
 #navBackground {
   margin-top: 180px; }
@@ -11,7 +14,7 @@
   width: 80vw;
   height: auto;
   background-color: white;
-  margin: -160px auto 0px;
+  margin: -150px auto 0px;
   left: 0;
   right: 0;
   border-radius: 26px;
@@ -19,7 +22,17 @@
   padding: 20px 0px; }
   @media only screen and (min-width: 500px) {
     #whiteBg {
-      padding: 20px 0px 40px; } }
+      padding: 20px 0px 40px;
+      margin: -200px auto 0px; } }
+  @media only screen and (min-width: 700px) {
+    #whiteBg {
+      width: 600px;
+      margin: -250px auto 0px; } }
+  @media only screen and (min-width: 900px) {
+    #whiteBg {
+      padding: 60px 0px 80px;
+      width: 700px;
+      margin: -300px auto 0px; } }
   #whiteBg p {
     padding: 0 20px;
     max-width: 445px;
@@ -35,6 +48,10 @@
     #loader-pie {
       width: 350px;
       height: 350px; } }
+  @media only screen and (min-width: 900px) {
+    #loader-pie {
+      width: 450px;
+      height: 450px; } }
 
 #pieSection {
   margin: 70px auto; }
@@ -49,6 +66,9 @@
   @media only screen and (min-width: 700px) {
     #pieSection {
       margin: 120px auto; } }
+  @media only screen and (min-width: 900px) {
+    #pieSection {
+      margin: 200px auto; } }
 
 #review1,
 #review2 {
@@ -59,7 +79,7 @@
   #review1 p,
   #review2 p {
     padding: 0px 15px;
-    max-width: 200px;
+    max-width: 300px;
     background-color: white; }
 
 #review1 img,
@@ -92,6 +112,10 @@
     #review1 img,
     #review2 img {
       width: 300px; } }
+  @media only screen and (min-width: 900px) {
+    #review1 img,
+    #review2 img {
+      width: 350px; } }
 
 footer button,
 nav button {
@@ -118,19 +142,29 @@ nav button {
   #aboutSection .contactBtn {
     display: block;
     margin: 0 auto 30px;
-    padding: 15px 8px; }
+    padding: 20px 10px; }
     @media only screen and (min-width: 500px) {
       #aboutSection .contactBtn {
         font-size: 14pt; } }
+    @media only screen and (min-width: 900px) {
+      #aboutSection .contactBtn {
+        margin-bottom: 100px; } }
   #aboutSection #profile {
     display: grid;
     grid-template-columns: 1fr 1fr; }
+    @media only screen and (min-width: 900px) {
+      #aboutSection #profile {
+        width: 650px;
+        margin: auto; } }
     #aboutSection #profile img {
       display: block;
       margin-left: auto; }
       @media only screen and (min-width: 500px) {
         #aboutSection #profile img {
           width: 300px; } }
+      @media only screen and (min-width: 900px) {
+        #aboutSection #profile img {
+          width: 350px; } }
     #aboutSection #profile p {
       padding: 25px;
       max-width: 200px;
@@ -155,6 +189,9 @@ h1 {
   @media only screen and (min-width: 700px) {
     h1 {
       font-size: 16pt; } }
+  @media only screen and (min-width: 900px) {
+    h1 {
+      font-size: 18pt; } }
 
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -165,6 +202,9 @@ h2 {
   @media only screen and (min-width: 700px) {
     h2 {
       font-size: 15pt; } }
+  @media only screen and (min-width: 900px) {
+    h2 {
+      font-size: 17pt; } }
 
 p {
   font-family: "Open Sans", sans-serif;
@@ -175,6 +215,9 @@ p {
   @media only screen and (min-width: 700px) {
     p {
       font-size: 14pt; } }
+  @media only screen and (min-width: 900px) {
+    p {
+      font-size: 16pt; } }
 
 button {
   background-color: #009779;
@@ -183,7 +226,8 @@ button {
   border-radius: 26px;
   padding: 20px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  cursor: pointer; }
   @media only screen and (min-width: 500px) {
     button {
       font-size: 12pt; } }
@@ -235,6 +279,10 @@ button {
       #index-header #logo,
       #index-header #slogan {
         margin: 15px auto auto 40px; } }
+    @media only screen and (min-width: 1300px) {
+      #index-header #logo,
+      #index-header #slogan {
+        margin: 15px auto auto 25vw; } }
   #index-header #slogan {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
@@ -264,6 +312,13 @@ nav {
       border: none;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr; } }
+  @media only screen and (min-width: 900px) {
+    nav {
+      width: 600px; } }
+  @media only screen and (min-width: 1300px) {
+    nav {
+      width: 500px;
+      margin-right: 25vw; } }
   nav button {
     margin: 50px auto 0px;
     color: black; }

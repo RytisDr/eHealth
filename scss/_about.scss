@@ -13,19 +13,30 @@
   .contactBtn {
     display: block;
     margin: 0 auto 30px;
-    padding: 15px 8px;
+    padding: 20px 10px;
     @include phablet {
       font-size: 14pt;
+    }
+    @include miniDesktop {
+      margin-bottom: 100px;
     }
   }
   #profile {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include miniDesktop {
+      width: 650px;
+      margin: auto;
+    }
+
     img {
       display: block;
       margin-left: auto;
       @include phablet {
         width: 300px;
+      }
+      @include miniDesktop {
+        width: 350px;
       }
     }
     p {

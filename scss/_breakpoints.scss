@@ -9,12 +9,12 @@
   }
 }
 
-@mixin desktop {
-  @media only screen and (min-width: 900px) {
+@mixin miniDesktop {
+  @media only all and (min-width: 900px) {
     @content;
   }
 }
-@mixin big-desktop {
+@mixin desktop {
   @media only screen and (min-width: 1300px) {
     @content;
   }

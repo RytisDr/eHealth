@@ -20,6 +20,9 @@ h1 {
   @include tablet {
     font-size: 16pt;
   }
+  @include miniDesktop {
+    font-size: 18pt;
+  }
 }
 h2 {
   font-family: $h-font;
@@ -29,6 +32,9 @@ h2 {
   }
   @include tablet {
     font-size: 15pt;
+  }
+  @include miniDesktop {
+    font-size: 17pt;
   }
 }
 p {
@@ -40,6 +46,9 @@ p {
   @include tablet {
     font-size: 14pt;
   }
+  @include miniDesktop {
+    font-size: 16pt;
+  }
 }
 button {
   background-color: #009779;
@@ -49,6 +58,7 @@ button {
   padding: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  cursor: pointer;
   @include phablet {
     font-size: 12pt;
   }
@@ -107,6 +117,9 @@ button {
     @include tablet {
       margin: 15px auto auto 40px;
     }
+    @include desktop {
+      margin: 15px auto auto 25vw;
+    }
   }
   #slogan {
     font-family: $p-font;
@@ -137,6 +150,13 @@ nav {
     border: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include miniDesktop {
+    width: 600px;
+  }
+  @include desktop {
+    width: 500px;
+    margin-right: 25vw;
   }
   button {
     margin: 50px auto 0px;
