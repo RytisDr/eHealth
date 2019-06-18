@@ -47,9 +47,11 @@
   #review1 p,
   #review2 p {
     padding: 0px 15px;
+    max-width: 200px;
     background-color: white; }
 
-#review1 img {
+#review1 img,
+#review2 p {
   display: block;
   margin-left: auto; }
 
@@ -64,6 +66,11 @@
   margin-bottom: 50px; }
   #reviewsSection h1 {
     margin-bottom: 30px; }
+
+@media only screen and (min-width: 500px) {
+  #review1 img,
+  #review2 img {
+    width: 250px; } }
 
 footer button,
 nav button {
@@ -80,16 +87,34 @@ nav button {
 #aboutSection {
   margin-top: 200px; }
   #aboutSection p {
-    padding: 15px 50px; }
+    padding: 15px 50px;
+    max-width: 450px;
+    display: block;
+    margin: 20px auto; }
+    @media only screen and (min-width: 500px) {
+      #aboutSection p {
+        margin: 40px auto; } }
   #aboutSection .contactBtn {
     display: block;
-    margin: auto;
+    margin: 0 auto 30px;
     padding: 15px 8px; }
+    @media only screen and (min-width: 500px) {
+      #aboutSection .contactBtn {
+        font-size: 14pt; } }
   #aboutSection #profile {
     display: grid;
     grid-template-columns: 1fr 1fr; }
+    #aboutSection #profile img {
+      display: block;
+      margin-left: auto; }
+      @media only screen and (min-width: 500px) {
+        #aboutSection #profile img {
+          width: 250px; } }
     #aboutSection #profile p {
-      padding: 25px; }
+      padding: 25px;
+      max-width: 200px;
+      display: block;
+      margin: auto auto auto 0; }
 
 div[data-lns-mountpoint] {
   margin-top: 200px; }
@@ -103,14 +128,23 @@ h1 {
   font-weight: 700;
   font-size: 12pt;
   text-align: center; }
+  @media only screen and (min-width: 500px) {
+    h1 {
+      font-size: 14pt; } }
 
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 11pt; }
+  @media only screen and (min-width: 500px) {
+    h2 {
+      font-size: 13pt; } }
 
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 10pt; }
+  @media only screen and (min-width: 500px) {
+    p {
+      font-size: 12pt; } }
 
 button {
   background-color: #009779;
@@ -120,6 +154,9 @@ button {
   padding: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700; }
+  @media only screen and (min-width: 500px) {
+    button {
+      font-size: 12pt; } }
 
 #index-header {
   transition: all 0.3s;
@@ -212,6 +249,10 @@ footer {
   margin: 50px 20px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  @media only screen and (min-width: 500px) {
+    footer {
+      max-width: 450px;
+      margin: 20px auto; } }
   footer p {
     font-size: 8pt;
     display: block;

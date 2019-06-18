@@ -4,6 +4,12 @@ const circlesSection = document.querySelector("#pieSection");
 const contactButtons = document.querySelectorAll(".contactBtn");
 const orderButtons = document.querySelectorAll(".orderBtn");
 const aboutButtons = document.querySelectorAll(".aboutBtn");
+//window size
+const windowWidth = Math.max(
+  document.documentElement.clientWidth,
+  window.innerWidth || 0
+);
+console.log(windowWidth);
 //scroll actions
 window.addEventListener("scroll", () => {
   const logo = document.getElementById("logo");
@@ -78,7 +84,7 @@ function listen(btn) {
     }
   });
 }
-document.querySelector("#home").addEventListener("click", () => {
+document.querySelector("#logo").addEventListener("click", () => {
   window.location.href = "index.html";
 });
 ///fetch the JSON, apply to the DOM

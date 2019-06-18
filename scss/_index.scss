@@ -1,3 +1,4 @@
+@import "breakpoints";
 #weights,
 #buffet {
   width: 100vw;
@@ -51,10 +52,12 @@
   grid-template-columns: 1fr 1fr;
   p {
     padding: 0px 15px;
+    max-width: 200px;
     background-color: white;
   }
 }
-#review1 img {
+#review1 img,
+#review2 p {
   display: block;
   margin-left: auto;
 }
@@ -71,6 +74,12 @@
   margin-bottom: 50px;
   h1 {
     margin-bottom: 30px;
+  }
+}
+#review1 img,
+#review2 img {
+  @include phablet {
+    width: 250px;
   }
 }
 footer button,

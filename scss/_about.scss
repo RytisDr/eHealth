@@ -1,18 +1,38 @@
+@import "breakpoints";
 #aboutSection {
   margin-top: 200px;
   p {
     padding: 15px 50px;
+    max-width: 450px;
+    display: block;
+    margin: 20px auto;
+    @include phablet {
+      margin: 40px auto;
+    }
   }
   .contactBtn {
     display: block;
-    margin: auto;
+    margin: 0 auto 30px;
     padding: 15px 8px;
+    @include phablet {
+      font-size: 14pt;
+    }
   }
   #profile {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    img {
+      display: block;
+      margin-left: auto;
+      @include phablet {
+        width: 250px;
+      }
+    }
     p {
       padding: 25px;
+      max-width: 200px;
+      display: block;
+      margin: auto auto auto 0;
     }
   }
 }

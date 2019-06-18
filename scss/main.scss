@@ -3,6 +3,8 @@
 @import "contact";
 $p-font: "Open Sans", sans-serif;
 $h-font: "Montserrat", sans-serif;
+@import "breakpoints";
+
 body,
 html {
   margin: 0 auto;
@@ -12,14 +14,23 @@ h1 {
   font-weight: 700;
   font-size: 12pt;
   text-align: center;
+  @include phablet {
+    font-size: 14pt;
+  }
 }
 h2 {
   font-family: $h-font;
   font-size: 11pt;
+  @include phablet {
+    font-size: 13pt;
+  }
 }
 p {
   font-family: $p-font;
   font-size: 10pt;
+  @include phablet {
+    font-size: 12pt;
+  }
 }
 button {
   background-color: #009779;
@@ -29,6 +40,9 @@ button {
   padding: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  @include phablet {
+    font-size: 12pt;
+  }
 }
 //index-header
 #index-header {
@@ -137,6 +151,10 @@ footer {
   margin: 50px 20px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @include phablet {
+    max-width: 450px;
+    margin: 20px auto;
+  }
   p {
     font-size: 8pt;
     display: block;
