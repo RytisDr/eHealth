@@ -17,6 +17,9 @@ h1 {
   @include phablet {
     font-size: 14pt;
   }
+  @include tablet {
+    font-size: 16pt;
+  }
 }
 h2 {
   font-family: $h-font;
@@ -24,12 +27,18 @@ h2 {
   @include phablet {
     font-size: 13pt;
   }
+  @include tablet {
+    font-size: 15pt;
+  }
 }
 p {
   font-family: $p-font;
   font-size: 10pt;
   @include phablet {
     font-size: 12pt;
+  }
+  @include tablet {
+    font-size: 14pt;
   }
 }
 button {
@@ -42,6 +51,9 @@ button {
   font-weight: 700;
   @include phablet {
     font-size: 12pt;
+  }
+  @include tablet {
+    font-size: 14pt;
   }
 }
 //index-header
@@ -131,6 +143,7 @@ nav {
     color: black;
     @include tablet {
       margin: auto;
+      font-size: 12pt;
     }
   }
   button:not(:first-child) {

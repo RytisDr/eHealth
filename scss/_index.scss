@@ -32,8 +32,12 @@
   display: block;
   margin: auto;
   margin-top: 30px;
-  width: 60vw;
+  width: 250px;
   height: 250px;
+  @include tablet {
+    width: 350px;
+    height: 350px;
+  }
 }
 #pieSection {
   margin: 70px auto;
@@ -47,6 +51,9 @@
   #middleRing {
     opacity: 0;
     transition: opacity 2.5s;
+  }
+  @include tablet {
+    margin: 120px auto;
   }
 }
 #review1,
@@ -91,7 +98,7 @@
 #review2 img {
   width: 50vw;
   @include phablet {
-    width: 250px;
+    width: 300px;
   }
 }
 footer button,

@@ -29,8 +29,12 @@
   display: block;
   margin: auto;
   margin-top: 30px;
-  width: 60vw;
+  width: 250px;
   height: 250px; }
+  @media only screen and (min-width: 700px) {
+    #loader-pie {
+      width: 350px;
+      height: 350px; } }
 
 #pieSection {
   margin: 70px auto; }
@@ -42,6 +46,9 @@
   #pieSection #middleRing {
     opacity: 0;
     transition: opacity 2.5s; }
+  @media only screen and (min-width: 700px) {
+    #pieSection {
+      margin: 120px auto; } }
 
 #review1,
 #review2 {
@@ -84,7 +91,7 @@
   @media only screen and (min-width: 500px) {
     #review1 img,
     #review2 img {
-      width: 250px; } }
+      width: 300px; } }
 
 footer button,
 nav button {
@@ -123,7 +130,7 @@ nav button {
       margin-left: auto; }
       @media only screen and (min-width: 500px) {
         #aboutSection #profile img {
-          width: 250px; } }
+          width: 300px; } }
     #aboutSection #profile p {
       padding: 25px;
       max-width: 200px;
@@ -145,6 +152,9 @@ h1 {
   @media only screen and (min-width: 500px) {
     h1 {
       font-size: 14pt; } }
+  @media only screen and (min-width: 700px) {
+    h1 {
+      font-size: 16pt; } }
 
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -152,6 +162,9 @@ h2 {
   @media only screen and (min-width: 500px) {
     h2 {
       font-size: 13pt; } }
+  @media only screen and (min-width: 700px) {
+    h2 {
+      font-size: 15pt; } }
 
 p {
   font-family: "Open Sans", sans-serif;
@@ -159,6 +172,9 @@ p {
   @media only screen and (min-width: 500px) {
     p {
       font-size: 12pt; } }
+  @media only screen and (min-width: 700px) {
+    p {
+      font-size: 14pt; } }
 
 button {
   background-color: #009779;
@@ -171,6 +187,9 @@ button {
   @media only screen and (min-width: 500px) {
     button {
       font-size: 12pt; } }
+  @media only screen and (min-width: 700px) {
+    button {
+      font-size: 14pt; } }
 
 #index-header {
   transition: all 0.3s;
@@ -250,7 +269,8 @@ nav {
     color: black; }
     @media only screen and (min-width: 700px) {
       nav button {
-        margin: auto; } }
+        margin: auto;
+        font-size: 12pt; } }
   nav button:not(:first-child) {
     margin: 20px auto 0px;
     border: none;
