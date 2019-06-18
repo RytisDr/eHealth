@@ -95,7 +95,6 @@ fetch("data.json")
     });
   });
 function applyIndexData(data) {
-  console.log(data);
   //main bg images
   document.querySelector("#weights").src = data.indexMain.bgImage1;
   document.querySelector("#buffet").src = data.indexMain.bgImage2;
