@@ -17,8 +17,13 @@
   border-radius: 26px;
   text-align: center;
   padding: 20px 0px; }
+  @media only screen and (min-width: 500px) {
+    #whiteBg {
+      padding: 20px 0px 40px; } }
   #whiteBg p {
-    padding: 0 20px; }
+    padding: 0 20px;
+    max-width: 445px;
+    margin: auto; }
 
 #loader-pie {
   display: block;
@@ -64,13 +69,22 @@
 
 #reviewsSection {
   margin-bottom: 50px; }
+  @media only screen and (min-width: 700px) {
+    #reviewsSection {
+      margin-bottom: 80px; } }
   #reviewsSection h1 {
     margin-bottom: 30px; }
+    @media only screen and (min-width: 700px) {
+      #reviewsSection h1 {
+        margin-bottom: 50px; } }
 
-@media only screen and (min-width: 500px) {
-  #review1 img,
-  #review2 img {
-    width: 250px; } }
+#review1 img,
+#review2 img {
+  width: 50vw; }
+  @media only screen and (min-width: 500px) {
+    #review1 img,
+    #review2 img {
+      width: 250px; } }
 
 footer button,
 nav button {
@@ -172,6 +186,9 @@ button {
     top: 20px;
     right: 20px;
     padding: 10px 7px; }
+    @media only screen and (min-width: 700px) {
+      #index-header #burger {
+        display: none; } }
     #index-header #burger div {
       background-color: black;
       width: 30px;
@@ -195,6 +212,10 @@ button {
     grid-row: 1;
     width: 130px;
     margin: 30px auto 0; }
+    @media only screen and (min-width: 700px) {
+      #index-header #logo,
+      #index-header #slogan {
+        margin: 15px auto auto 40px; } }
   #index-header #slogan {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
@@ -213,20 +234,39 @@ nav {
   width: 100vw;
   height: 300px;
   top: -301px;
-  transition: top 1s; }
+  transition: all 0.3s; }
+  @media only screen and (min-width: 700px) {
+    nav {
+      top: 0px;
+      right: 0px;
+      height: 150px;
+      width: 70vw;
+      background-color: transparent;
+      border: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; } }
   nav button {
     margin: 50px auto 0px;
     color: black; }
+    @media only screen and (min-width: 700px) {
+      nav button {
+        margin: auto; } }
   nav button:not(:first-child) {
     margin: 20px auto 0px;
     border: none;
     background-color: #009779;
     color: white; }
+    @media only screen and (min-width: 700px) {
+      nav button:not(:first-child) {
+        margin: auto; } }
   nav #closeMenu {
     width: 50px;
     height: 50px;
     position: absolute;
     right: 25px; }
+    @media only screen and (min-width: 700px) {
+      nav #closeMenu {
+        display: none; } }
     nav #closeMenu div {
       display: block;
       margin: auto;

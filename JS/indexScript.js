@@ -17,16 +17,23 @@ window.addEventListener("scroll", () => {
   const header = document.getElementById("index-header");
   const middleRing = document.querySelector("#middleRing");
   const outerRing = document.querySelector("#outerRing");
+  const nav = document.querySelector("nav");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     logo.style.width = "70px";
-    logo.style.margin = "15px auto 0";
+    logo.style.marginTop = "15px";
     header.style.height = "80px";
     slogan.style.opacity = "0";
+    if (windowWidth >= 700) {
+      nav.style.height = "80px";
+    }
   } else {
-    logo.style.margin = "30px auto 0";
+    logo.style.marginTop = "30px";
     header.style.height = headerInitHeight;
     logo.style.width = "130px";
     slogan.style.opacity = "1";
+    if (windowWidth >= 700) {
+      nav.style.height = "150px";
+    }
   }
   //the ring animaiton script, under conditions taht its in vw
   if (circlesSection) {

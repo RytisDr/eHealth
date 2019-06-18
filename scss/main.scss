@@ -53,6 +53,8 @@ button {
   position: fixed;
   z-index: 2;
   top: 0;
+  @include tablet {
+  }
   //burger menu
   #burger {
     position: fixed;
@@ -60,6 +62,9 @@ button {
     top: 20px;
     right: 20px;
     padding: 10px 7px;
+    @include tablet {
+      display: none;
+    }
     div {
       background-color: black;
       width: 30px;
@@ -87,6 +92,9 @@ button {
     grid-row: 1;
     width: 130px;
     margin: 30px auto 0;
+    @include tablet {
+      margin: 15px auto auto 40px;
+    }
   }
   #slogan {
     font-family: $p-font;
@@ -107,22 +115,41 @@ nav {
   width: 100vw;
   height: 300px;
   top: -301px;
-  transition: top 1s;
+  transition: all 0.3s;
+  @include tablet {
+    top: 0px;
+    right: 0px;
+    height: 150px;
+    width: 70vw;
+    background-color: transparent;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   button {
     margin: 50px auto 0px;
     color: black;
+    @include tablet {
+      margin: auto;
+    }
   }
   button:not(:first-child) {
     margin: 20px auto 0px;
     border: none;
     background-color: #009779;
     color: white;
+    @include tablet {
+      margin: auto;
+    }
   }
   #closeMenu {
     width: 50px;
     height: 50px;
     position: absolute;
     right: 25px;
+    @include tablet {
+      display: none;
+    }
     div {
       display: block;
       margin: auto;
