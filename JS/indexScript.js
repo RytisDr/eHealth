@@ -108,9 +108,21 @@ fetch("data.json")
     });
   });
 function applyIndexData(data) {
-  //main bg images
-  document.querySelector("#weights").src = data.indexMain.bgImage1;
-  document.querySelector("#buffet").src = data.indexMain.bgImage2;
+  //images
+  if (windowWidth > 600) {
+    document.querySelector("#review1Img").src = data.reviews.review1ImgL;
+    document.querySelector("#review2Img").src = data.reviews.review2ImgL;
+    document.querySelector("#weights").src = data.indexMain.bgImage1L;
+    document.querySelector("#buffet").src = data.indexMain.bgImage2L;
+  } else {
+    //main bg images
+    document.querySelector("#weights").src = data.indexMain.bgImage1;
+    document.querySelector("#buffet").src = data.indexMain.bgImage2;
+    //review IMG
+    document.querySelector("#review1Img").src = data.reviews.review1Img;
+    document.querySelector("#review2Img").src = data.reviews.review2Img;
+  }
+
   //first h1
   document.querySelector("#whiteBg h1").textContent = data.indexMain.heading1;
   //first p
@@ -121,12 +133,15 @@ function applyIndexData(data) {
   document.querySelector("#pieSection p").textContent =
     data.underCircles.paragraph;
   //reviews
-  document.querySelector("#review1Img").src = data.reviews.review1Img;
   document.querySelector("#review1 p").textContent = data.reviews.review1P;
-  document.querySelector("#review2Img").src = data.reviews.review2Img;
   document.querySelector("#review2 p").textContent = data.reviews.review2P;
 }
 function applyAboutData(data) {
   document.querySelector("#profileP").textContent = data.aboutMe.pictureP;
   document.querySelector("#aboutP").textContent = data.aboutMe.aboutP;
+  if (windowWidth > 600) {
+    document.querySelector("#profile img").src = data.aboutMe.imageL;
+  } else {
+    document.querySelector("#profile img").src = data.aboutMe.image;
+  }
 }

@@ -38,6 +38,9 @@
       @include miniDesktop {
         width: 350px;
       }
+      @include desktop {
+        width: 400px;
+      }
     }
     p {
       padding: 25px;

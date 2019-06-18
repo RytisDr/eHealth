@@ -33,6 +33,11 @@
       padding: 60px 0px 80px;
       width: 700px;
       margin: -300px auto 0px; } }
+  @media only screen and (min-width: 1300px) {
+    #whiteBg {
+      padding: 90px 0px 100px;
+      width: 700px;
+      margin: -350px auto 0px; } }
   #whiteBg p {
     padding: 0 20px;
     max-width: 445px;
@@ -116,6 +121,10 @@
     #review1 img,
     #review2 img {
       width: 350px; } }
+  @media only screen and (min-width: 1300px) {
+    #review1 img,
+    #review2 img {
+      width: 400px; } }
 
 footer button,
 nav button {
@@ -165,6 +174,9 @@ nav button {
       @media only screen and (min-width: 900px) {
         #aboutSection #profile img {
           width: 350px; } }
+      @media only screen and (min-width: 1300px) {
+        #aboutSection #profile img {
+          width: 400px; } }
     #aboutSection #profile p {
       padding: 25px;
       max-width: 200px;

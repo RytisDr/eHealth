@@ -35,6 +35,9 @@
     margin: -300px auto 0px;
   }
   @include desktop {
+    padding: 90px 0px 100px;
+    width: 700px;
+    margin: -350px auto 0px;
   }
   p {
     padding: 0 20px;
@@ -123,6 +126,9 @@
   }
   @include miniDesktop {
     width: 350px;
+  }
+  @include desktop {
+    width: 400px;
   }
 }
 footer button,
