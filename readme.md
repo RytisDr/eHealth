@@ -1,4 +1,4 @@
-#Emulating a CMS
+# Emulating a CMS
 
 CMS is emulated via data.json file that was hand-written.
 Therefore I can use any endpoint with data in case of a real CMS.
