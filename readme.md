@@ -1,3 +1,7 @@
+https://rtsdr.com/Lenus/index
+
+Due to htaccess files on my domain the entry point is index or index.html
+
 # Emulating a CMS
 
 CMS is emulated via data.json file that was hand-written.

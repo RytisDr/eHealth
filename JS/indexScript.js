@@ -9,7 +9,6 @@ const windowWidth = Math.max(
   document.documentElement.clientWidth,
   window.innerWidth || 0
 );
-console.log(windowWidth);
 //scroll actions
 window.addEventListener("scroll", () => {
   const logo = document.getElementById("logo");
@@ -35,7 +34,7 @@ window.addEventListener("scroll", () => {
       nav.style.height = "150px";
     }
   }
-  //the ring animaiton script, under conditions taht its in vw
+  //the ring animation script, under conditions taht its in vw
   if (circlesSection) {
     if (isInViewport(circlesSection)) {
       middleRing.style.opacity = "1";
@@ -81,18 +80,18 @@ orderButtons.forEach(btn => {
 function listen(btn) {
   btn.addEventListener("click", e => {
     if (e.target.className === "contactBtn") {
-      window.location.href = "/contact.html";
+      window.location.href = "contact";
     }
     if (e.target.className === "orderBtn") {
-      window.location.href = "/order.html";
+      window.location.href = "order";
     }
     if (e.target.className === "aboutBtn") {
-      window.location.href = "/about.html";
+      window.location.href = "about";
     }
   });
 }
 document.querySelector("#logo").addEventListener("click", () => {
-  window.location.href = "index.html";
+  window.location.href = "index";
 });
 ///fetch the JSON, apply to the DOM
 fetch("data.json")
